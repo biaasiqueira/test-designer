@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que esperamos:</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/we-wait.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>Orientações para o teste</title>
+
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <img src="img/girl.png" alt="">
+
+            <div class="text">
+                <h1>O que esperamos?</h1>
+
+                <p>Com o template em mãos, esperamos que você consiga diagramar as paginas em html, na sequencia apresentada, seguindo o Layout proposto com todos os elementos presentes.</p>
+
+                <button id="open">Pop-up</button>
+            </div>
+        </div>
+
+        <div class="modal" id="modal">
+                <div class="modal-content">
+                <span class="close"><img src="img/close.png" alt=""></span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+        </div>
+
+        <div class="nav">
+          <a href="orientacoes.html"><img src="img/left.png" alt=""></a>
+          <a href="requisitos.html " ><img src="img/right.png" alt=""></a>
+      </div>
+    </main>
+        <script>
+                
+            var modal = document.getElementById("modal");
+            
+           
+            var btn = document.getElementById("open");
+            
+         
+            var span = document.getElementsByClassName("close")[0];
+            
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+         
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+    
+</body>
+</html>

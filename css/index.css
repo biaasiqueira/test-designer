@@ -1,0 +1,39 @@
+
+    header img{
+        width: 100vw; 
+     }
+
+     .container{
+        position: relative;
+         width: 80%;
+         margin: 0 auto;
+        
+     }
+
+     .text{
+         width: 90%;
+         color:var(--orange);
+         font-size: 25px;
+         margin: 30px auto;
+     }
+
+     .text h1{
+         font-weight: 300;
+     }
+
+     .text h2{
+         font-size: 30px;
+     }
+
+     a{
+         text-decoration: none;
+         color: var(--gray);
+         position: absolute;
+         bottom: -70px;
+         right: 0;
+         background-color: var(--yellow);
+         padding: 10px 50px;
+         font-size: 20px ;
+         text-align: center;
+
+     }

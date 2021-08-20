@@ -1,0 +1,19 @@
+.nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    bottom: 5px;
+    text-align: center;
+    
+
+}
+
+.nav a {
+    background-color: var(--yellow);
+    width: 50px;
+    padding: 5px
+} 
+.nav  img{
+    width: 18px;
+}
